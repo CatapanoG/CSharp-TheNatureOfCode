@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{418F852B-A579-45D4-80A2-A3EDA915F90D}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\00 Intro\I01\I01\I01\I01Content\</RootDirectory>
+      <LoggerRootDirectory>G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\00 Intro\I01\I01\I01\I01\</LoggerRootDirectory>
+      <IntermediateDirectory>G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\00 Intro\I01\I01\I01\I01\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\00 Intro\I01\I01\I01\I01\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-08-22T16:30:23.0255991+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,6 @@
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\00 Intro\I01\I01\I01\I01\bin\x86\Debug\I01.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\00 Intro\I01\I01\I01\I01\bin\x86\Debug\I01.pdb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\00 Intro\I01\I01\I01\I01\obj\x86\Debug\I01.csprojResolveAssemblyReference.cache
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\00 Intro\I01\I01\I01\I01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\00 Intro\I01\I01\I01\I01\obj\x86\Debug\I01.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\00 Intro\I01\I01\I01\I01\obj\x86\Debug\I01.pdb
