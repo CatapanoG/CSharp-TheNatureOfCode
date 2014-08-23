@@ -11,15 +11,16 @@ using Microsoft.Xna.Framework.Media;
 
 namespace I01.Helpers
 {
-    class drawing
+    class Drawing
     {
         // Vars
         static Texture2D pointTexture;
         static Color defaultColor = Color.White;
         static SpriteBatch sb;
+        static float stdAlpha = 1.00f;
 
         // Constructor
-        public drawing(GraphicsDevice graphDev, SpriteBatch spriteBatch)
+        public Drawing(GraphicsDevice graphDev, SpriteBatch spriteBatch)
         {
             pointTexture = new Texture2D(graphDev, 1, 1, false, SurfaceFormat.Color);
             pointTexture.SetData<Color>(new Color[] { defaultColor });
@@ -28,9 +29,17 @@ namespace I01.Helpers
         }
 
         // Methods
+        public static void init(GraphicsDevice graphDev, SpriteBatch spriteBatch)
+        {
+            pointTexture = new Texture2D(graphDev, 1, 1, false, SurfaceFormat.Color);
+            pointTexture.SetData<Color>(new Color[] { defaultColor });
+
+            sb = spriteBatch;
+        }
+
         public static void point(int x, int y, Color color)
         {
-            sb.Draw(pointTexture, new Rectangle(x, y, 2, 2), color);
+            sb.Draw(pointTexture, new Rectangle(x, y, 1, 1), color * stdAlpha);
         }
 
         public static void rectangle(int x, int y, int width, int height, Color color)

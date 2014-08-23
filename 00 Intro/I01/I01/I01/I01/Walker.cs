@@ -9,6 +9,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
+using I01.Helpers;
+
 namespace I01
 {
     class Walker
@@ -16,18 +18,20 @@ namespace I01
         int x;
         int y;
         Random rnd = new Random();
+        Color color = Color.Black;
 
-        public Walker()
+        public Walker(int width, int height)
         {
-            x = I01.Game1.width / 2;
-            y = I01.Game1.height / 2;
+            x = width / 2;
+            y = height / 2;
         }
 
         public void display()
         {
-            Helpers.drawing.point(x, y, Color.Red);
+            Drawing.point(x, y, color);
         }
 
+        // 4 possible steps
         public void step()
         {
             int choice = (int)rnd.Next(4);
@@ -48,6 +52,15 @@ namespace I01
             {
                 y--;
             }
+        }
+        // 8 possible steps
+        public void step2()
+        {
+            int stepx = rnd.Next(-1, 2);
+            int stepy = rnd.Next(-1, 2);
+
+            x += stepx;
+            y += stepy;
         }
     }
 }

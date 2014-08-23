@@ -1,0 +1,1 @@
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I03\I03\I03Content\obj\x86\Debug\I03Content.contentprojResolveAssemblyReference.cache
