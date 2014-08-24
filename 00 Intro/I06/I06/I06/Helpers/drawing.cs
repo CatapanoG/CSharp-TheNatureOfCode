@@ -9,16 +9,27 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace I07.Helpers
+using I06.Helpers;
+
+namespace I06.Helpers
 {
     class Drawing
     {
         // Vars
+        static SpriteBatch sb;
+        static GraphicsDevice device;
+
         static Texture2D pointTexture;
         static Texture2D circleTexture;
-        static int circleRadius = 200;
+
+        static Texture2D perlinTexture;
+        static Perlin perlinClass = new Perlin(99);
+        static Color[] textureColors;
+        static float perlinTime = 0f;
+        static int perlinWidth;
+        static int perlinHeight;
+
         static Color defaultColor = Color.White;
-        static SpriteBatch sb;
         static float stdAlpha = 1.00f;
 
         // Methods
@@ -29,6 +40,7 @@ namespace I07.Helpers
             pointTexture.SetData<Color>(new Color[] { defaultColor });
 
             // init circleTexture
+            int circleRadius = 200;
             circleTexture = new Texture2D(graphDev, circleRadius, circleRadius);
             Color[] colorData = new Color[circleRadius * circleRadius];
 
@@ -53,8 +65,9 @@ namespace I07.Helpers
             }
             circleTexture.SetData<Color>(colorData);
 
-            // spriteBatch reference
+            // spriteBatch & GraphDev references
             sb = spriteBatch;
+            device = graphDev;
         }
 
         public static void point(int x, int y, Color color)
@@ -76,6 +89,35 @@ namespace I07.Helpers
         {
             circle(x, y, radius, color);
             circle(x + stroke / 2, y + stroke / 2, radius - stroke, strokeColor);
+        }
+
+        public static void perlin(int xPos, int yPos, int width, int height)
+        {
+            perlinTexture = new Texture2D(device, width, height, false, SurfaceFormat.Color);
+
+            for (int x = 0; x < perlinWidth; x++)
+            {
+                for (int y = 0; y < perlinHeight; y++)
+                {
+                    //textureColors[x + y * width] = new Color(250,0,0);
+                    textureColors[x + y * width] = new Color(
+                            (int)((perlinClass.Noise(0.1 + x*0.02, 0.1 + y*0.02, 0.1 + perlinTime)+0.5)*200),
+                            0,
+                            0);
+                }
+            }
+
+            perlinTexture.SetData<Color>(textureColors);
+            sb.Draw(perlinTexture, new Rectangle(xPos, yPos, width, height), Color.White);
+            perlinTime += 0.05f;
+        }
+
+        public static void perlinInit(int xPos, int yPos, int width, int height)
+        {
+            perlinTexture = new Texture2D(device, width, height, false, SurfaceFormat.Color);
+            textureColors = new Color[width * height];
+            perlinWidth = width;
+            perlinHeight = height;
         }
     }
 }

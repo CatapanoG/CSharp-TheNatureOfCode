@@ -9,9 +9,9 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-using I07.Helpers;
+using I06.Helpers;
 
-namespace I07
+namespace I06
 {
     public class Game1 : Microsoft.Xna.Framework.Game
     {
@@ -20,10 +20,8 @@ namespace I07
         GraphicsDevice device;
         RenderTarget2D rt;
 
-        int width = 800;
-        int height = 800;
-
-        Walker w;
+        int width = 400;
+        int height = 400;
 
         public Game1()
         {
@@ -43,7 +41,7 @@ namespace I07
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
             device = graphics.GraphicsDevice;
-            rt = new RenderTarget2D(GraphicsDevice,
+            /*rt = new RenderTarget2D(GraphicsDevice,
                 width,
                 height,
                 false,
@@ -54,12 +52,12 @@ namespace I07
             
             device.SetRenderTarget(rt);
             device.Clear(Color.Black);
-            device.SetRenderTarget(null);
+            device.SetRenderTarget(null);*/
 
             Drawing.init(device, spriteBatch);
             Stats.init();
 
-            w = new Walker(width, height);
+            Drawing.perlinInit(0, 0, width, height);
 
             base.Initialize();
         }
@@ -74,24 +72,27 @@ namespace I07
 
         protected override void Update(GameTime gameTime)
         {
-            w.step();
-
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
-            graphics.GraphicsDevice.SetRenderTarget(rt);
+            // The code below is for using the rendertarget
+            //
+            /*graphics.GraphicsDevice.SetRenderTarget(rt);
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
 
             GraphicsDevice.Clear(Color.Black);
-            w.display();
 
             spriteBatch.End();
             graphics.GraphicsDevice.SetRenderTarget(null);
 
             spriteBatch.Begin();
             spriteBatch.Draw((Texture2D)rt, new Vector2(0, 0), Color.White);
+            spriteBatch.End();*/
+
+            spriteBatch.Begin();
+            Drawing.perlin(0, 0, width, height);
             spriteBatch.End();
 
             base.Draw(gameTime);

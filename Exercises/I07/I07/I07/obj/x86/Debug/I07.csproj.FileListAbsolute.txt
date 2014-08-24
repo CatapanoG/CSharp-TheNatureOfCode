@@ -3,3 +3,4 @@ G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I07\I07\I07\bin\x86\De
 G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I07\I07\I07\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I07\I07\I07\obj\x86\Debug\I07.exe
 G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I07\I07\I07\obj\x86\Debug\I07.pdb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I07\I07\I07\obj\x86\Debug\I07.csprojResolveAssemblyReference.cache
