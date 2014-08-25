@@ -23,7 +23,6 @@ namespace I06.Helpers
         static Texture2D circleTexture;
 
         static Texture2D perlinTexture;
-        static Perlin perlinClass = new Perlin(99);
         static Color[] textureColors;
         static float perlinTime = 0f;
         static int perlinWidth;
@@ -93,7 +92,7 @@ namespace I06.Helpers
 
         public static void perlin(int xPos, int yPos, int width, int height)
         {
-            perlinTexture = new Texture2D(device, width, height, false, SurfaceFormat.Color);
+            //perlinTexture = new Texture2D(device, width, height, false, SurfaceFormat.Color);
 
             for (int x = 0; x < perlinWidth; x++)
             {
@@ -101,12 +100,19 @@ namespace I06.Helpers
                 {
                     //textureColors[x + y * width] = new Color(250,0,0);
                     textureColors[x + y * width] = new Color(
-                            (int)((perlinClass.Noise(0.1 + x*0.02, 0.1 + y*0.02, 0.1 + perlinTime)+0.5)*200),
-                            0,
-                            0);
+                            Noise.GetNoise(0.1 + x * 0.05, 0.1 + y * 0.05, 0.1 + perlinTime),
+                            0f,
+                            0f);
+                    /*sb.Draw(pointTexture, new Rectangle(x, y, 1, 1), new Color(
+                        Noise.GetNoise(0.1 + x * 0.03, 0.1 + y * 0.03, 0.1 + perlinTime),
+                            0f,
+                            0f)
+                        );*/
+
                 }
             }
 
+            device.Textures[0] = null;
             perlinTexture.SetData<Color>(textureColors);
             sb.Draw(perlinTexture, new Rectangle(xPos, yPos, width, height), Color.White);
             perlinTime += 0.05f;

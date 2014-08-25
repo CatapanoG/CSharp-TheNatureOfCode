@@ -18,10 +18,10 @@ namespace I06
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         GraphicsDevice device;
-        RenderTarget2D rt;
+        //RenderTarget2D rt;
 
-        int width = 400;
-        int height = 400;
+        int width = 900;
+        int height = 900;
 
         public Game1()
         {

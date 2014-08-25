@@ -19,7 +19,6 @@ namespace I06
         int y;
         float tx = 0;
         float ty = 10000;
-        Perlin perlin;
         int width;
         int height;
 
@@ -27,8 +26,6 @@ namespace I06
         {
             x = Width / 2;
             y = Height / 2;
-
-            perlin = new Perlin(99);
 
             width = Width;
             height = Height;
@@ -41,8 +38,8 @@ namespace I06
 
         public void step()
         {
-            x += (int)((perlin.Noise(tx, 0.1, 0.1))*10);
-            y += (int)((perlin.Noise(ty, 0.1, 0.1))*10);
+            x += (int)(Noise.GetNoise(tx, 0.1, 0.1));
+            y += (int)(Noise.GetNoise(ty, 0.1, 0.1));
 
             tx += 0.05f;
             ty += 0.05f;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{3C49EA33-13A2-4A95-9647-734ACDD06F12}</ProjectGuid>
@@ -73,7 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\drawing.cs" />
-    <Compile Include="Helpers\Perlin.cs" />
+    <Compile Include="Helpers\NoiseGen.cs" />
     <Compile Include="Helpers\stats.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
