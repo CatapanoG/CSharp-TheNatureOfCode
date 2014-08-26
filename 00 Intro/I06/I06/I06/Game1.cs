@@ -35,7 +35,7 @@ namespace I06
             graphics.PreferredBackBufferWidth = width;
             graphics.PreferredBackBufferHeight = height;
             graphics.ApplyChanges();
-            Window.Title = "Exercise I.7";
+            Window.Title = "Example I.6: 2D Perlin noise";
 
             this.IsMouseVisible = true;
 
@@ -55,7 +55,6 @@ namespace I06
             device.SetRenderTarget(null);*/
 
             Drawing.init(device, spriteBatch);
-            Stats.init();
 
             Drawing.perlinInit(0, 0, width, height);
 

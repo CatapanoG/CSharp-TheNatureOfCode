@@ -15,7 +15,7 @@ namespace I06.Helpers
 {
     class Drawing
     {
-        // Vars
+        #region Variables
         static SpriteBatch sb;
         static GraphicsDevice device;
 
@@ -30,8 +30,9 @@ namespace I06.Helpers
 
         static Color defaultColor = Color.White;
         static float stdAlpha = 1.00f;
+        #endregion
 
-        // Methods
+        #region Public methods
         public static void init(GraphicsDevice graphDev, SpriteBatch spriteBatch)
         {
             // init pointTexture
@@ -99,10 +100,11 @@ namespace I06.Helpers
                 for (int y = 0; y < perlinHeight; y++)
                 {
                     //textureColors[x + y * width] = new Color(250,0,0);
+                    float perlin = Noise.GetNoise(0.1 + x * 0.05, 0.1 + y * 0.05, 0.1 + perlinTime);
                     textureColors[x + y * width] = new Color(
-                            Noise.GetNoise(0.1 + x * 0.05, 0.1 + y * 0.05, 0.1 + perlinTime),
-                            0f,
-                            0f);
+                            perlin,
+                            perlin,
+                            perlin);
                     /*sb.Draw(pointTexture, new Rectangle(x, y, 1, 1), new Color(
                         Noise.GetNoise(0.1 + x * 0.03, 0.1 + y * 0.03, 0.1 + perlinTime),
                             0f,
@@ -115,7 +117,9 @@ namespace I06.Helpers
             device.Textures[0] = null;
             perlinTexture.SetData<Color>(textureColors);
             sb.Draw(perlinTexture, new Rectangle(xPos, yPos, width, height), Color.White);
-            perlinTime += 0.05f;
+            
+            // Set perlinTime > 0 for a dynamic effect
+            perlinTime += 0.00f;
         }
 
         public static void perlinInit(int xPos, int yPos, int width, int height)
@@ -125,5 +129,6 @@ namespace I06.Helpers
             perlinWidth = width;
             perlinHeight = height;
         }
+        #endregion
     }
 }

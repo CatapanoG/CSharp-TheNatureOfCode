@@ -1,0 +1,5 @@
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I08\I08\I08\bin\x86\Debug\I08.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I08\I08\I08\bin\x86\Debug\I08.pdb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I08\I08\I08\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I08\I08\I08\obj\x86\Debug\I08.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\I08\I08\I08\obj\x86\Debug\I08.pdb

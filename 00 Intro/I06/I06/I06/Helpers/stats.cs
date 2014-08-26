@@ -11,10 +11,6 @@ namespace I06.Helpers
         static int uniformRange = 100;
         static int randomLength = 15;
 
-        public static void init()
-        {
-        }
-
         public static float stdNormal() // support [-0.5,0.5]
         {
             float value = 0.0f;
