@@ -1,0 +1,6 @@
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors11\Vectors11\Vectors11\bin\x86\Debug\Content\effects.xnb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors11\Vectors11\Vectors11\bin\x86\Debug\Vectors11.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors11\Vectors11\Vectors11\bin\x86\Debug\Vectors11.pdb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors11\Vectors11\Vectors11\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors11\Vectors11\Vectors11\obj\x86\Debug\Vectors11.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors11\Vectors11\Vectors11\obj\x86\Debug\Vectors11.pdb

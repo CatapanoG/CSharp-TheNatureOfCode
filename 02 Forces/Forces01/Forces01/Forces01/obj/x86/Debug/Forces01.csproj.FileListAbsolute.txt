@@ -1,0 +1,7 @@
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\02 Forces\Forces01\Forces01\Forces01\bin\x86\Debug\Content\effects.xnb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\02 Forces\Forces01\Forces01\Forces01\bin\x86\Debug\Forces01.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\02 Forces\Forces01\Forces01\Forces01\bin\x86\Debug\Forces01.pdb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\02 Forces\Forces01\Forces01\Forces01\obj\x86\Debug\Forces01.csprojResolveAssemblyReference.cache
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\02 Forces\Forces01\Forces01\Forces01\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\02 Forces\Forces01\Forces01\Forces01\obj\x86\Debug\Forces01.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\02 Forces\Forces01\Forces01\Forces01\obj\x86\Debug\Forces01.pdb

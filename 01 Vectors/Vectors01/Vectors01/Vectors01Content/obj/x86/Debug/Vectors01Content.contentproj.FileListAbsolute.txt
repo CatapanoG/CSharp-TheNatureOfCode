@@ -1,0 +1,1 @@
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors01\Vectors01\Vectors01Content\obj\x86\Debug\Vectors01Content.contentprojResolveAssemblyReference.cache

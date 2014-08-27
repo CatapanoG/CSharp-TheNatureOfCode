@@ -1,0 +1,6 @@
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors02\Vectors02\Vectors02\bin\x86\Debug\Content\effects.xnb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors02\Vectors02\Vectors02\bin\x86\Debug\Vectors02.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors02\Vectors02\Vectors02\bin\x86\Debug\Vectors02.pdb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors02\Vectors02\Vectors02\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors02\Vectors02\Vectors02\obj\x86\Debug\Vectors02.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\01 Vectors\Vectors02\Vectors02\Vectors02\obj\x86\Debug\Vectors02.pdb

@@ -25,10 +25,8 @@ namespace Vectors02
         int width = 900;
         int height = 900;
 
-        float x = 100f;
-        float y = 100f;
-        float xspeed = 1f;
-        float yspeed = 3.3f;
+        Vector2 location = new Vector2(100f,100f);
+        Vector2 velocity = new Vector2(2.5f,5f);
 
         public Game1()
         {
@@ -84,21 +82,19 @@ namespace Vectors02
 
             //Helpers._3d.drawScene();
 
-            x = x + xspeed;
-            y = y + yspeed;
+            location = Vector2.Add(location, velocity);
 
-            if ((x < 0) || (x > width))
+            if ((location.X < 0) || (location.X > width))
             {
-                xspeed = xspeed * -1;
+                velocity.X = velocity.X * -1;
             }
-            if ((y < 0) || (y > height))
+            if ((location.Y < 0) || (location.Y > height))
             {
-                yspeed = yspeed * -1;
+                velocity.Y = velocity.Y * -1;
             }
 
             spriteBatch.Begin();
-            //Helpers.Drawing.circle((int)x, (int)y, 32, Color.White);
-            Helpers.Drawing.strokeCircle((int)x, (int)y, 64, Color.Black, 10, Color.Gray);
+            Helpers.Drawing.strokeCircle((int)location.X, (int)location.Y, 64, Color.Black, 10, Color.Gray);
             spriteBatch.End();
 
             base.Draw(gameTime);
