@@ -1,0 +1,8 @@
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\Forces08\Forces08\Forces08\bin\x86\Debug\Content\effects.xnb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\Forces08\Forces08\Forces08\bin\x86\Debug\Content\stdFont.xnb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\Forces08\Forces08\Forces08\bin\x86\Debug\Forces08.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\Forces08\Forces08\Forces08\bin\x86\Debug\Forces08.pdb
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\Forces08\Forces08\Forces08\obj\x86\Debug\Forces08.csprojResolveAssemblyReference.cache
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\Forces08\Forces08\Forces08\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\Forces08\Forces08\Forces08\obj\x86\Debug\Forces08.exe
+G:\CodingProjects\GITHUB\CSharp-TheNatureOfCode\Exercises\Forces08\Forces08\Forces08\obj\x86\Debug\Forces08.pdb
